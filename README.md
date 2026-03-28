@@ -27,11 +27,14 @@ classDiagram
     class Szin {
         <<enumeration>>
         PIROS
-        ZÖLD
-        KÉK
-        -ansiKod: String
-        +getAnsiKod() String
+        ZOLD
+        KEK
     }
+
+    JatekIndito --> Jatek : "start"
+    Jatek "1" *-- "3" Csiga : "contains"
+    Csiga --> Szin : "has"
+    Jatek ..> Szin : "betting"
 
     JatekIndito --> Jatek : elindítja [cite: 29]
     Jatek "1" *-- "3" Csiga : tartalmazza [cite: 29]
