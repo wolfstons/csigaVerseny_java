@@ -36,7 +36,7 @@ classDiagram
     Csiga --> Szin : "has"
     Jatek ..> Szin : "betting"
 
-    JatekIndito --> Jatek : elindítja [cite: 29]
-    Jatek "1" *-- "3" Csiga : tartalmazza [cite: 29]
-    Csiga --> Szin : azonosítja [cite: 7, 35]
-    Jatek ..> Szin : fogadáshoz használja [cite: 8, 36]
+    JatekIndito --> Jatek : elindítja
+    Jatek "1" *-- "3" Csiga : tartalmazza 
+    Csiga --> Szin : azonosítja 
+    Jatek ..> Szin : fogadáshoz használja
