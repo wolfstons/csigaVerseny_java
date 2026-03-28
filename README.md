@@ -24,15 +24,16 @@ classDiagram
         +getSzin() Szin
     }
 
-    class Szin <<enumeration>> {
+    class Szin {
+        <<enumeration>>
         PIROS
         ZÖLD
         KÉK
-        +ansiKod: String
+        -ansiKod: String
         +getAnsiKod() String
     }
 
-    JatekIndito --> Jatek : példányosítja és indítja
-    Jatek "1" *-- "3" Csiga : tartalmazza a versenyzőket
-    Csiga --> Szin : rendelkezik egy színnel
-    Jatek ..> Szin : használja a fogadáshoz
+    JatekIndito --> Jatek : elindítja [cite: 29]
+    Jatek "1" *-- "3" Csiga : tartalmazza [cite: 29]
+    Csiga --> Szin : azonosítja [cite: 7, 35]
+    Jatek ..> Szin : fogadáshoz használja [cite: 8, 36]
